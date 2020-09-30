@@ -7,41 +7,35 @@ public class td_Jeux {
 
     public static void remplir(int n){
         if(n==1){
-            System.out.println(n);
+            System.out.println("remplir : " +n);
         }else if (n==2){
-            System.out.println(n-1);
-            System.out.println(n);
+            System.out.println("remplir : "+ (n-1));
+            System.out.println("remplir : "+n);
         }else{
 
             remplir(n-1);
             vider(n-2);
-            System.out.println(n);
+            System.out.println("remplir : " + n);
             remplir(n-2);
 
         }
     }
 
-    public static void remplirAux(int n){
-
-    }
 
     public static void vider(int n){
         if(n==1){
-            System.out.println(n);
+            System.out.println("vider : " +n);
         }else if(n==2){
-            System.out.println(n-1);
-            System.out.println(n);
+            System.out.println("vider : " + (n-1));
+            System.out.println("vider : " +n);
         }else {
             vider(n-1);
             remplir(n-2);
-            System.out.println(n);
+            System.out.println("vider : " +n);
             vider(n-2);
         }
     }
 
-    public static void viderAux(int n){
-
-    }
 
 
     private static void resoudre(int n){
